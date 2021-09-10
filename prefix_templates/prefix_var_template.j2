@@ -1,0 +1,6 @@
+prefix_list:
+  name: "{{ prefix_list_name }}"
+  addresses:
+{%- for address in prefix_list %}
+    - "{{ address }}"
+{%- endfor %}
